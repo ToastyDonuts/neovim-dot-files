@@ -1,0 +1,3 @@
+wswsslocal cmd = vim.cmd
+
+
