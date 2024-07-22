@@ -1,6 +1,3 @@
-require('keymaps')
-require('options')
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   vim.fn.system({
@@ -13,11 +10,12 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
-
+require('keymaps')
+require('options')
 require("lazy").setup("plugins")
+require('commands')
+require('autocommand')
 
-vim.diagnostic.config({
-  update_in_insert = true
-})
 
-vim.cmd [[colorscheme catppuccin-mocha]]
+
+

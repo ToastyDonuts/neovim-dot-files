@@ -9,7 +9,7 @@ return {
   opts = {
     mode = 'float',
     float = {
-      close_key = "<ESC>",
+      close_key = "q",
       border = "rounded",
     },
     filetype = {
@@ -26,7 +26,7 @@ return {
         "$dir/$fileNameWithoutExt"
       },
       c = function(...)
-        c_base = {
+        local c_base = {
           "cd $dir &&",
           "gcc $fileName -o",
           "/tmp/$fileNameWithoutExt",

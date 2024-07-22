@@ -19,6 +19,11 @@ o.termguicolors = true
 g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1
 
+vim.diagnostic.config({
+  update_in_insert = true
+})
+
+
 opt.undodir="/home/super/.stuff/nvim_undo/"
 opt.undofile=true
 

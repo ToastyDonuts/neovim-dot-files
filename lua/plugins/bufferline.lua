@@ -10,7 +10,7 @@ return {
       require("bufferline").setup({
         highlights = {
           fill = {
-            bg = mocha.mantle,
+            bg = mocha.mantle
           }
         },
         options = {
@@ -19,7 +19,7 @@ return {
               filetype = "neo-tree",
               text = "File Explorer",
               text_align = "center",
-              separator = true,
+              separator = false,
             }
           }
         }

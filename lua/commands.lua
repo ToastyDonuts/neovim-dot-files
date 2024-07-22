@@ -1,3 +1,2 @@
-wswsslocal cmd = vim.cmd
-
+vim.cmd [[colorscheme catppuccin-mocha]]
 
