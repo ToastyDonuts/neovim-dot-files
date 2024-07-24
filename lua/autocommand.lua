@@ -10,3 +10,14 @@ local function set_docker_file_type()
 end
 
 set_docker_file_type()
+
+--[[ vim.api.nvim_create_autocmd("VimEnter", {
+  command = "set nornu nonu | Trouble diagnostics toggle"
+})
+
+vim.api.nvim_create_autocmd("VimEnter", {
+  command = "set nornu nonu | Neotree toggle",
+})
+vim.api.nvim_create_autocmd("BufEnter", {
+  command = "set rnu nu",
+}) ]]

@@ -21,8 +21,16 @@ return {
     opts = {},
     priority = 480,
     config = function ()
-      require("plugins.lsp.servers.lua")
-      require("plugins.lsp.servers.c")
+      local default = {
+        on_attach = function(client, bufnr)
+
+        end,
+        -- local capabilities = vim.lsp.protocol.make_client_capabilities()
+        capabilities = require("cmp_nvim_lsp").default_capabilities()
+      }
+      require("plugins.lsp.servers.lua").setup(default)
+      require("plugins.lsp.servers.c").setup(default)
+      require("plugins.lsp.servers.javascript").setup(default)
     end
   },
   {

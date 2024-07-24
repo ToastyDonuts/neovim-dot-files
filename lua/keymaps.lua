@@ -19,4 +19,3 @@ map('n', '<leader>q', ':qa!<CR>')
 map('v', '>', '>gv')
 map('v', '<', '<gv')
 
-

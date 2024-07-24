@@ -7,9 +7,16 @@ return {
       default_integrations = true,
       integrations = {
         bufferline = true,
-        mason = true
+        mason = true,
+        navic = {
+          enabled = true,
+          custom_bg = "lualine"
+        }
       }
-    }
+    },
+    config = function()
+      vim.cmd [[colorscheme catppuccin]]
+    end
 	},
 	{
   		"folke/tokyonight.nvim",
